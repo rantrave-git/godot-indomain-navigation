@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bg8u67kh10h2t"]
+
+[ext_resource type="Script" uid="uid://bvjjvrhcqceil" path="res://target_follower.gd" id="1_xqiy8"]
+[ext_resource type="Material" uid="uid://kv3rvdpeu7sb" path="res://materials/in_domain.tres" id="2_uese6"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_a202f"]
+
+[node name="DomainAgent3D" type="DomainAgent3D" unique_id=1584059867]
+radius = 0.5
+script = ExtResource("1_xqiy8")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2038584032]
+material_override = ExtResource("2_uese6")
+mesh = SubResource("SphereMesh_a202f")
