@@ -9,7 +9,7 @@ Clone the repository with submodules.
 
 Build the project:
 ```bash
-$ scons -Q release=true
+$ scons release=yes
 ```
 
 ## Custom compile options
@@ -17,7 +17,7 @@ $ scons -Q release=true
 Add following keys to customize build:
 - `release=no` - disable release compile flags (`-O2 -mmmx -msse4.1 -ffast-math -fassociative-math` and disable `NDEBUG`)
 - `no_tools=yes` - don't include editor tools to the build
-- `debug=<module-names>`/`-Q trace=<module-names>` - enable debug/trace logs for selected modules (comma separated):
+- `debug=<module-names>`/`trace=<module-names>` - enable debug/trace logs for selected modules (comma separated):
   + `vmath` - plane math
   + `bsp` - BSP tree
   + `bsp_split` - BSP tree building
@@ -65,3 +65,4 @@ On my hardware (Ryzen 9 7900X) I managed to achieve 4k+ agents at 144fps (physic
 - build as godot module
 - physical collisions with world at automatic movement phase (requires godot module build for optimal performance)
 - add tests
+- write docs
